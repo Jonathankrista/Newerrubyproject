@@ -1,29 +1,137 @@
-<p id="notice"><%= notice %></p>
+<style>
 
-<p>
-  <strong>Title:</strong>
-  <%= @portfolio.title %>
-</p>
+  html,
+  body {
+    height: 100%;
+  }
 
-<p>
-  <strong>Description:</strong>
-  <%= @portfolio.description %>
-</p>
+  /* You can change the height of the carousel by changing the height in the class below. It is set to 50% by default, but can be any height! */
 
-<p>
-  <strong>Image url:</strong>
-  <%= @portfolio.image_url %>
-</p>
+  .carousel {
+    height: 50%;
+  }
 
-<p>
-  <strong>Category:</strong>
-  <%= @portfolio.category %>
-</p>
+  .item,
+  .active,
+  .carousel-inner {
+    height: 100%;
+  }
 
-<p>
-  <strong>Subcategory:</strong>
-  <%= @portfolio.subcategory %>
-</p>
+  /* Background images are set within the HTML using inline CSS, not here */
+
+  .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+  footer {
+    margin: 50px 0;
+  }
+
+</style>
 
 <%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
 <%= link_to 'Back', portfolios_path %>
+
+
+<body>
+  <!-- Half Page Image Background Carousel Header -->
+  <header id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for Slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <!-- Set the first background image using inline CSS below. -->
+        <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+        <div class="carousel-caption">
+          <h2>Caption 1</h2>
+        </div>
+      </div>
+      <div class="item">
+        <!-- Set the second background image using inline CSS below. -->
+        <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+        <div class="carousel-caption">
+          <h2>Caption 2</h2>
+        </div>
+      </div>
+      <div class="item">
+        <!-- Set the third background image using inline CSS below. -->
+        <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+        <div class="carousel-caption">
+          <h2>Caption 3</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="icon-prev"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="icon-next"></span>
+    </a>
+
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-12">
+        <h1><%= @portfolio.title %></h1>
+        <h2><%= @portfolio.description %></h2>
+        <h3><%= @portfolio.image_url %></h3>
+        <p>
+          <strong>Category:</strong>
+          <%= @portfolio.category %>
+        </p>
+
+        <p>
+          <strong>Subcategory:</strong>
+          <%= @portfolio.subcategory %>
+        </p>
+
+        <p>The background images for the slider are set directly in the HTML using inline CSS. The rest of the styles for this template are contained within the <code>half-slider.css</code>file.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright &copy; Your Website 2014</p>
+        </div>
+      </div>
+      <!-- /.row -->
+    </footer>
+
+  </div>
+  <!-- /.container -->
+
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Script to Activate the Carousel -->
+  <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+      })
+  </script>
+
+</body>

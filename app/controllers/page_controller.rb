@@ -9,5 +9,6 @@ class PageController < ApplicationController
   end
 
   def portfolio
+  	
   end
 end
