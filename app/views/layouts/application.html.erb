@@ -39,10 +39,11 @@
      </ul>
      <ul class="nav navbar-nav navbar-right">
       <% if user_signed_in? %>
-      <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
+        <li><%= link_to 'New Portfolio', new_portfolio_path %></li>
+        <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
       <% else %>
-      <li><%= link_to '<span class="glyphicon glyphicon-user"></span>  Sign In'.html_safe, new_user_session_path %></li>
-      <li><%= link_to '<span class="glyphicon glyphicon-log-in"></span> Sign Up'.html_safe, new_user_registration_path %></li>
+        <li><%= link_to '<span class="glyphicon glyphicon-user"></span>  Sign In'.html_safe, new_user_session_path %></li>
+        <li><%= link_to '<span class="glyphicon glyphicon-log-in"></span> Sign Up'.html_safe, new_user_registration_path %></li>
       <% end %>
     </ul>
   </div>
