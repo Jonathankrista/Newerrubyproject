@@ -4,7 +4,13 @@ class PortfoliosController < ApplicationController
   # GET /portfolios
   # GET /portfolios.json
   def index
-    @portfolios = Portfolio.all
+    # @portfolios = Portfolio.all
+    if params[:search]
+      @portfolios = Portfolio.search(params[:search]).order("created_at DESC")
+    else
+      @portfolios = Portfolio.order("created_at DESC")
+
+  end
   end
 
   # GET /portfolios/1
@@ -20,6 +26,10 @@ class PortfoliosController < ApplicationController
   # GET /portfolios/1/edit
   def edit
   end
+
+  def get
+  end
+
 
   # POST /portfolios
   # POST /portfolios.json
