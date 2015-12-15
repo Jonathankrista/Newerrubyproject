@@ -10,6 +10,7 @@ class PortfoliosController < ApplicationController
     else
       @portfolios = Portfolio.order("created_at DESC")
 
+
   end
   end
 
