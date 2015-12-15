@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 20151128210920) do
     t.string   "image_url"
     t.string   "category"
     t.string   "subcategory"
+    t.integer  "likes"
+    t.integer  "views"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

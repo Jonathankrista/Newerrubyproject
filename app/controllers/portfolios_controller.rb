@@ -17,6 +17,7 @@ class PortfoliosController < ApplicationController
   # GET /portfolios/1
   # GET /portfolios/1.json
   def show
+     @portfolio = Portfolio.find(params[:id])
   end
 
   # GET /portfolios/new
@@ -80,6 +81,6 @@ class PortfoliosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def portfolio_params
-      params.require(:portfolio).permit(:title, :description, :image_url, :category, :subcategory)
+      # params.require(:portfolio).permit(:title, :description, :image_url, :category, :subcategory)
     end
 end
