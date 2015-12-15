@@ -1,0 +1,23 @@
+ <!-- Page Content -->
+ <div class="container">
+    <!-- First Featurette -->
+
+    <style type="text/css">
+        .profileImage {
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <img class="profileImage img-circle img-responsive center" src="http://placehold.it/250x250">   
+            <!-- <button class="btn btn-primary">Add Profile Image</button>     -->
+
+            <!-- <form class="new_portfolio" id="new_portfolio" enctype="multipart/form-data" action="/portfolios" accept-charset="UTF-8" method="post"> -->
+                <input type="file" class="btn btn-primary" name="portfolio[image_url]" id="portfolio_image_url">
+            <!-- </form> -->
+        </div>
+    </div>
+
+    <button><%= link_to '<span class="glyphicon glyphicon-user"></span> New Portfolio'.html_safe, new_portfolio_path %></button>
+</div>
