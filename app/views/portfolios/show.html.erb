@@ -35,8 +35,6 @@
 
 </style>
 
-<%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
-<%= link_to 'Back', portfolios_path %>
 
 
 <body>
@@ -101,46 +99,96 @@
           <%= @portfolio.subcategory %>
         </p>
       </div>
-
+<!--
       <%= form_for(@portfolio) do |f| %>
       <div class="form-group">
       <%= f.text_field :title, class: "form-control", placeholder: "Enter the Title" %>
       <%= f.text_field :description, class: "form-control", placeholder: "Enter the " %>
       <%= f.text_field :category, class: "form-control", placeholder: "Enter the Category" %>
-      <%= f.text_field :subcategory, class: "form-control", placeholder: "Enter the SubCategory" %>
-      <%= f.text_field :likes, class: "form-control hidden"%>
+      <%= f.text_field :subcategory, class: "form-control", placeholder: "Enter the SubCategory" %> -->
       <button id = "likeBtn" type="submit" class="btn btn-primary">Like</button>
-    <% end %>
+      <% end %>
+      <div class='like'>
+      <button class='like-toggle basic'><i class="fa fa-camera"></i></button>
+        <span class='hidden'>1 Like</span>
+      </div>
+      <%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
+      <%= link_to 'Back', portfolios_path %>
+
+
+
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright &copy; Your Website 2014</p>
+        </div>
+      </div>
+      <!-- /.row -->
+    </footer>
 
   </div>
 
-  <hr>
+  <style>
+    *{transition: all 0.3s linear;}
 
-  <!-- Footer -->
-  <footer>
-    <div class="row">
-      <div class="col-lg-12">
-        <p>Copyright &copy; Your Website 2014</p>
-      </div>
-    </div>
-    <!-- /.row -->
-  </footer>
-
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript">
-  $("#likeBtn").click(function(){
-    alert("Wokring");
-    var likes = $("#portfolio_likes").val();
-    if (likes) {
-      $("#portfolio_likes").val(likes +1);
-    } else {
-      $("#portfolio_likes").val(1);
+    .hidden{
+      font-size: 0;
     }
-    alert($("#portfolio_likes").val());
 
-  });
+    .like,p{
+      font-family: 'Open Sans';
+    }
+
+    .like-toggle{
+      outline:none;
+      box-shadow:none;
+      border: none;
+      width: 40px;
+      height: 30px;
+      font-size: 1.3em;
+      border-radius: 100px;
+    }
+
+    .like-active.basic{
+      background: #7CC576;
+      color: white;
+    }
+
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $('.like-toggle').click(function(){
+        $(this).toggleClass('like-active');
+        $(this).next().toggleClass('hidden');
+      });
+    });
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript">
+    $("#like").click(function(){
+      alert("Wokring");
+      var likes = $("#portfolio_likes").val();
+      if (likes) {
+        $("#portfolio_likes").val(likes +1);
+      } else {
+        $("#portfolio_likes").val(1);
+      }
+      alert($("#portfolio_likes").val());
+
+    });
+
+  </script>
+
+
+
 
 
 </script>

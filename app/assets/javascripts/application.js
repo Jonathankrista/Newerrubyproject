@@ -15,4 +15,3 @@
 //= require_tree .
 
 $('.slider').saSlider();
-
