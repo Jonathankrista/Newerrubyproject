@@ -100,37 +100,57 @@
           <strong>Subcategory:</strong>
           <%= @portfolio.subcategory %>
         </p>
-
-        <p>The background images for the slider are set directly in the HTML using inline CSS. The rest of the styles for this template are contained within the <code>half-slider.css</code>file.</p>
       </div>
-    </div>
 
-    <hr>
-
-    <!-- Footer -->
-    <footer>
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright &copy; Your Website 2014</p>
-        </div>
-      </div>
-      <!-- /.row -->
-    </footer>
+      <%= form_for(@portfolio) do |f| %>
+      <div class="form-group">
+      <%= f.text_field :title, class: "form-control", placeholder: "Enter the Title" %>
+      <%= f.text_field :description, class: "form-control", placeholder: "Enter the " %>
+      <%= f.text_field :category, class: "form-control", placeholder: "Enter the Category" %>
+      <%= f.text_field :subcategory, class: "form-control", placeholder: "Enter the SubCategory" %>
+      <%= f.text_field :likes, class: "form-control hidden"%>
+      <button id = "likeBtn" type="submit" class="btn btn-primary">Like</button>
+    <% end %>
 
   </div>
-  <!-- /.container -->
 
-  <!-- jQuery -->
-  <script src="js/jquery.js"></script>
+  <hr>
 
-  <!-- Bootstrap Core JavaScript -->
-  <script src="js/bootstrap.min.js"></script>
+  <!-- Footer -->
+  <footer>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>Copyright &copy; Your Website 2014</p>
+      </div>
+    </div>
+    <!-- /.row -->
+  </footer>
 
-  <!-- Script to Activate the Carousel -->
-  <script>
-    $('.carousel').carousel({
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+  $("#likeBtn").click(function(){
+    alert("Wokring");
+    var likes = $("#portfolio_likes").val();
+    if (likes) {
+      $("#portfolio_likes").val(likes +1);
+    } else {
+      $("#portfolio_likes").val(1);
+    }
+    alert($("#portfolio_likes").val());
+
+  });
+
+
+</script>
+<!-- /.container -->
+
+<!-- Script to Activate the Carousel -->
+<script>
+  $('.carousel').carousel({
         interval: 5000 //changes the speed
       })
-  </script>
+</script>
 
 </body>

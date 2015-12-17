@@ -5,9 +5,11 @@ Rails.application.routes.draw do
   root 'page#home'
   
   get 'page/about'
+  get 'page/profile'
 
   get 'page/contact'
-  get 'page/portfolio' => 'portfolios#index' 
+  get 'page/portfolio' => 'portfolios#index'
+
 
   # get 'page/portfolio'
 
