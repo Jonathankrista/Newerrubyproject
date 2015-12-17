@@ -1,9 +1,12 @@
 #mainNav {
 	background-color: transparent;
-	border-color: transparent;
+	border-color: transparent!important;
 	overflow:hidden;
 }
 
+.navbar-toggle {
+border-color: tramsparent!important;
+}
 
 .Showcase {
 	font: normal normal bold 60px/0 "montserrat", Helvetica, sans-serif;
@@ -13,6 +16,10 @@
 	letter-spacing: 2px;
 	word-spacing: 16px;
 
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+border-color:transparent!important;
 }
 
 .navbar-default .navbar-brand {
