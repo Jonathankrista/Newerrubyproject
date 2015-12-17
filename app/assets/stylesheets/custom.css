@@ -1,5 +1,37 @@
 #mainNav {
 	background-color: transparent;
 	border-color: transparent;
-  overflow:hidden;
+	overflow:hidden;
+}
+
+
+.Showcase {
+	font: normal normal bold 60px/0 "montserrat", Helvetica, sans-serif;
+	color: #f05766;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	letter-spacing: 2px;
+	word-spacing: 16px;
+
+}
+
+.navbar-default .navbar-brand {
+color: #f05766!important;
+}
+
+.navbar-brand {
+font-size:30px!important;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+background-color: #f05766!important;
+
+}
+
+@media (max-width: 798px) {
+.navbar-right {
+    float: right!important;
+    margin-right: -15px;
+    display:none;
+
 }
