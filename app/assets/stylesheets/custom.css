@@ -4,6 +4,10 @@
 	overflow:hidden;
 }
 
+.navbar-default .navbar-nav>li>a {
+color:#111!important;
+}
+
 .navbar-toggle {
 border-color: tramsparent!important;
 }
@@ -41,4 +45,14 @@ background-color: #f05766!important;
     margin-right: -15px;
     display:none;
 
+}
+
+div.jumbotron {
+	background-color:transparent!important;
+	position:relative;
+	top:300px!important;
+	text-align:center;
+	margin:0 auto;
+	z-index: 3;
+	padding:0;
 }
