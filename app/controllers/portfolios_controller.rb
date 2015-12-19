@@ -9,15 +9,13 @@ class PortfoliosController < ApplicationController
       @portfolios = Portfolio.search(params[:search]).order("created_at DESC")
     else
       @portfolios = Portfolio.order("created_at DESC")
-
-
-  end
+    end
   end
 
   # GET /portfolios/1
   # GET /portfolios/1.json
   def show
-     @portfolio = Portfolio.find(params[:id])
+    @portfolio = Portfolio.find(params[:id])
   end
 
   # GET /portfolios/new
@@ -31,7 +29,6 @@ class PortfoliosController < ApplicationController
 
   def get
   end
-
 
   # POST /portfolios
   # POST /portfolios.json
@@ -73,14 +70,16 @@ class PortfoliosController < ApplicationController
     end
   end
 
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_portfolio
-      @portfolio = Portfolio.find(params[:id])
-    end
+private
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def portfolio_params
-     params.require(:portfolio).permit(:title, :description, :image_url, :category, :subcategory)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_portfolio
+    @portfolio = Portfolio.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def portfolio_params
+    params.require(:portfolio).permit(:title, :description, :image_url, :category, :subcategory)
+  end
+
 end

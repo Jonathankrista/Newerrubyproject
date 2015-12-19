@@ -36,22 +36,22 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li>
+        <li class="hvr-underline-from-left">
           <%= link_to '<span class="glyphicon glyphicon-info-sign"></span> About'.html_safe, page_about_path %>
         </li>
-        <li>
+        <li class="hvr-underline-from-left">
          <%= link_to '<span class="glyphicon glyphicon-camera"></span> Portfolio'.html_safe, page_portfolio_path %>
        </li>
-       <li><%= link_to '<span class="glyphicon glyphicon-envelope"></span> Contact'.html_safe, page_contact_path %>
+       <li class="hvr-underline-from-left"><%= link_to '<span class="glyphicon glyphicon-envelope"></span> Contact'.html_safe, page_contact_path %>
        </li>
      </ul>
      <ul class="nav navbar-nav navbar-right">
       <% if user_signed_in? %>
-      <li><%= link_to '<span class="glyphicon glyphicon-user"></span> My Profile'.html_safe, page_profile_path %></li>
-      <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
+      <li class="hvr-underline-from-left"><%= link_to '<span class="glyphicon glyphicon-user"></span> My Profile'.html_safe, page_profile_path %></li>
+      <li class="hvr-underline-from-left"><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
       <% else %>
-      <li><%= link_to '<span class="glyphicon glyphicon-user"></span>  Sign In'.html_safe, new_user_session_path %></li>
-      <li><%= link_to '<span class="glyphicon glyphicon-log-in"></span> Sign Up'.html_safe, new_user_registration_path %></li>
+      <li class="hvr-underline-from-left"><%= link_to '<span class="glyphicon glyphicon-user"></span>  Sign In'.html_safe, new_user_session_path %></li>
+      <li class="hvr-underline-from-left"><%= link_to '<span class="glyphicon glyphicon-log-in"></span> Sign Up'.html_safe, new_user_registration_path %></li>
       <% end %>
     </ul>
 
