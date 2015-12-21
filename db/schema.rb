@@ -11,16 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20151221193740) do
-=======
-ActiveRecord::Schema.define(version: 20151220201428) do
 
   create_table "links", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
->>>>>>> 5b60841bf77696337bda66d269b967428d45181e
 
   create_table "portfolios", force: :cascade do |t|
     t.string   "title"
