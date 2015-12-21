@@ -26,7 +26,6 @@ ActiveRecord::Schema.define(version: 20151221193740) do
     t.string   "subcategory"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.string   "image"
   end
 
   create_table "posts", force: :cascade do |t|
