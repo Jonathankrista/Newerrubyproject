@@ -2,15 +2,22 @@
 
 class PictureUploader < CarrierWave::Uploader::Base
 
+include CarrierWave
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
   # include CarrierWave::MiniMagick
-  include Cloudinary::CarrierWave
+  # include Cloudinary::CarrierWave
   # Choose what kind of storage to use for this uploader:
 
+  storage :file
 
-  process :convert => 'png'
-  process :tags => ['post_picture']
+  def store_dir
+    "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
+  end
+
+ # include Cloudinary::CarrierWave
+ #  process :convert => 'png'
+ #  process :tags => ['post_picture']
 
   # version :standard do
   #   process :resize_to_fill => [100, 150, :north]
