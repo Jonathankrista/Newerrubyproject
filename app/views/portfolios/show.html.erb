@@ -87,12 +87,12 @@
 
     <div class="row">
       <div class="col-lg-12">
-        <h1><%= @portfolio.title %></h1>
+        <strong><h1><%= @portfolio.title %></h1></strong>
         <h2><%= @portfolio.description %></h2>
         <p>
           <strong>Category:</strong>
           <%= @portfolio.category %>
-        </p>
+         </p>
 
         <!-- p>
           <strong>Subcategory:</strong>
@@ -109,10 +109,7 @@
       <%= f.text_field :subcategory, class: "form-control", placeholder: "Enter the SubCategory" %> -->
      <!--  <button id = "likeBtn" type="submit" class="btn btn-primary">Like</button> -->
       <% end %>
-      <div class='like'>
-      <button class='like-toggle basic'><i class="fa fa-camera"></i></button>
-        <span class='hidden'>1 Like</span>
-      </div>
+
       <%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
       <%= link_to 'Back', portfolios_path %>
 
