@@ -148,3 +148,7 @@ div.jumbotron {
      hover:none	;
    }
  }
+
+ .like:hover {
+  text-decoration:none;
+ }

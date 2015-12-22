@@ -13,6 +13,11 @@ class PortfoliosController < ApplicationController
     end
   end
 
+  def index
+    @portfolios = Portfolio.all.order(:cached_votes_score => :desc)
+end
+
+
   # GET /portfolios/1
   # GET /portfolios/1.json
   def show

@@ -25,33 +25,33 @@
 
 
 
-          <!-- /.row -->
-          <% @portfolios.each do |portfolio| %>
-          <div class="col-md-4 portfolio-item">
-            <a href="#">
+  <!-- /.row -->
+  <% @portfolios.each do |portfolio| %>
+  <div class="col-md-4 portfolio-item">
+    <a href="#">
 
-              <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-            </a>
-            <h3> <%= link_to portfolio.title, portfolio %></h3>
-            <p><%= portfolio.description %></p>
+      <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+    </a>
+    <h3> <%= link_to portfolio.title, portfolio %></h3>
+    <p><%= portfolio.description %></p>
 
-            <%= link to unlike_portfolio_path(portfolio), class “like”, method::put do %>
-<button type =“button” class=“btn btw-info” aria-label=“Left Align”>
-<span class=“glyphicon  glyphicon-thumbs-down glyphicon-align-center”></span>
-<span class =“badge”><%=portfolio.get_downvotes.size %></span>
-</button>
-<% end %>
+    <%= link_to like_portfolio_path(portfolio), class: 'like', method: :put do %>
+    <button type='button' class='btn btn-info' aria-label='Left Align'>
+      <span class='glyphicon glyphicon-thumbs-up glyphicon-align-center' aria-hidden='true'></span>
+      <span class='badge'><%=portfolio.get_upvotes.size %></span>
+    </button>
+    <% end %>
 
-<%= link_to like_portfolio_path(portfolio), class:”like”, method::put do %>
-<button type=“button” class=“btn btn-info” aria-label=“Left Align”>
-<span class=“glyphicon glyphicon-thumbs-down glyphicon-align-center” aria-hidden=“true”></span>
-<span class=“badge”><%=movie.get_upvotes.size %></span>
-</button>
-<% end %>
+    <%= link_to unlike_portfolio_path(portfolio), class: 'unlike', method: :put do %>
+    <button type ='button' class='btn btn-info' aria-label='Left Align'>
+      <span class='glyphicon glyphicon-thumbs-down glyphicon-align-center' aria-hidden='true'></span>
+      <span class ='badge'><%=portfolio.get_downvotes.size %></span>
+    </button>
+    <% end %>
 
 
 
-          </div>
+  </div>
           <!-- <td><%= portfolio.title %></td>
           <td><%= portfolio.description %></td>
           <td><%= portfolio.image_url %></td>

@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
   resources :portfolios do
     member do
-      put "like" => "portfolio#upvote"
-      put "dislike" => "portfolio#downvote"
+      put "like" => "portfolios#upvote"
+      put "unlike" => "portfolios#downvote"
     end
 
   end
