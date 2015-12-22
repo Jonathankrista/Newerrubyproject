@@ -11,6 +11,10 @@ include CarrierWave
 
   storage :file
 
+
+  # process :convert => 'png'
+  # process :tags => ['post_picture']
+
   def store_dir
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end

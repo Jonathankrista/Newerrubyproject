@@ -1,5 +1,5 @@
 
-<%= form_for(@portfolio) do |f| %>
+<%= form_for @portfolio do |f| %>
 <% if @portfolio.errors.any? %>
 <div id="error_explanation">
   <h2><%= pluralize(@portfolio.errors.count, "error") %> prohibited this portfolio from being saved:</h2>
@@ -28,17 +28,13 @@
   <%= f.text_field :category, class: "form-control", placeholder: "Enter the Category" %>
 </div>
 
+
 <div class="form-group">
-  <label for="text">SubCategory</label>
-  <%= f.text_field :subcategory, class: "form-control", placeholder: "Enter the SubCategory" %>
+  <label for="text">Image</label>
+  <%= f.file_field :image_url %>
 </div>
 
-<div class="form-group"> 
-  <label for="text">Image Url</label>
-  <%= f.file_field :image_url %>  
-</div>
-
-<div class="form-group"> 
+<div class="form-group">
   <button type="submit" class="btn btn-default">Submit</button>
 </div>
 
