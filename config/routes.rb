@@ -1,9 +1,15 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :portfolios
+  resources :portfolios do
+    member do
+      put "like" => "portfolio#upvote"
+      put "dislike" => "portfolio#downvote"
+    end
+
+  end
 
   root 'page#home'
-  
+
   get 'page/about'
   get 'page/profile'
 

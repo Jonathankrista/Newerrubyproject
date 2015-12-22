@@ -1,5 +1,6 @@
 class PortfoliosController < ApplicationController
-  before_action :set_portfolio, only: [:show, :edit, :update, :destroy]
+  before_action :set_portfolio, only: [:show, :edit, :update, :destroy, :upvote, :downvote ]
+  before_action :authenticate_user!
 
   # GET /portfolios
   # GET /portfolios.json
@@ -45,6 +46,24 @@ class PortfoliosController < ApplicationController
       end
     end
   end
+
+
+#upvote from user
+#downvote from user
+  def upvote
+     @portfolio.upvote_from current_user
+     redirect_to portfolios_path
+  end
+
+
+  def downvote
+     @portfolio.downvote_from current_user
+     redirect_to portfolios_path
+  end
+
+
+
+
 
   # PATCH/PUT /portfolios/1
   # PATCH/PUT /portfolios/1.json
