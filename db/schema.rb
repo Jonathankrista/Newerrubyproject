@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20151222191650) do
     t.string   "subcategory"
     t.datetime "created_at",                            null: false
     t.datetime "updated_at",                            null: false
+    t.string   "image"
     t.integer  "cached_votes_total",      default: 0
     t.integer  "cached_votes_score",      default: 0
     t.integer  "cached_votes_up",         default: 0
