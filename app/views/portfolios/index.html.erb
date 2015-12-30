@@ -29,11 +29,12 @@
   <% @portfolios.each do |portfolio| %>
   <div class="col-md-4 portfolio-item">
     <a href="#">
-
-      <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+      <img class <%= portfolio.image_url %>="img-responsive" src="http://placehold.it/700x400" alt="">
     </a>
     <h3> <%= link_to portfolio.title, portfolio %></h3>
     <p><%= portfolio.description %></p>
+
+
 
     <%= link_to like_portfolio_path(portfolio), class: 'like', method: :put do %>
     <button type='button' class='btn btn-info' aria-label='Left Align'>

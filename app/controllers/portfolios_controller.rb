@@ -4,19 +4,18 @@ class PortfoliosController < ApplicationController
 
   # GET /portfolios
   # GET /portfolios.json
-  def index
-    # @portfolios = Portfolio.all
-    if params[:search]
-      @portfolios = Portfolio.search(params[:search]).order("created_at DESC")
-    else
-      @portfolios = Portfolio.order("created_at DESC")
-    end
+
+ #  def index
+ #   @portfolios = Portfolio.all.order(:cached_votes_score => :desc)
+ # end
+
+ def index
+  if params[:search]
+    @portfolios = Portfolio.search(params[:search]).order("created_at DESC")
+  else
+    @portfolios = Portfolio.order("created_at DESC")
   end
-
-  def index
-    @portfolios = Portfolio.all.order(:cached_votes_score => :desc)
 end
-
 
   # GET /portfolios/1
   # GET /portfolios/1.json
@@ -65,6 +64,11 @@ end
      @portfolio.downvote_from current_user
      redirect_to portfolios_path
   end
+
+   def index
+   @portfolios = Portfolio.all.order(:cached_votes_score => :desc)
+ end
+
 
 
 
