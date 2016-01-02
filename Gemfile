@@ -42,10 +42,9 @@ gem "letter_opener", :group => :development
 #act as voteable
 gem 'acts_as_votable', '~> 0.10.0'
 
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'
-end
+
+gem 'pg'
+gem 'rails_12factor'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
