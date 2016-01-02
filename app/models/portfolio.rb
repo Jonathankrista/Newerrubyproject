@@ -1,5 +1,5 @@
 class Portfolio < ActiveRecord::Base
-	mount_uploader :image_url, PictureUploader
+	mount_uploaders :photos, PictureUploader
 	acts_as_votable
 
 
@@ -8,8 +8,6 @@ class Portfolio < ActiveRecord::Base
     	# where(:title, query) -> This would return an exact match of the query
     	where("title like ? or category like ?", "%#{query}%", "%#{query}%")
 	end
-
-
 end
 
 
