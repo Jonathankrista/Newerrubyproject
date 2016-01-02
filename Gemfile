@@ -42,7 +42,7 @@ gem "letter_opener", :group => :development
 #act as voteable
 gem 'acts_as_votable', '~> 0.10.0'
 
-
+gem 'heroku'
 gem 'pg'
 gem 'rails_12factor'
 
