@@ -42,8 +42,8 @@ gem "letter_opener", :group => :development
 gem 'acts_as_votable', '~> 0.10.0'
 
 group :production do
-  gem 'pg'
-  gem 'rails_12factor'
+gem 'pg', '~> 0.18.4'
+gem 'rails_12factor'
 end
 
 group :development, :test do
