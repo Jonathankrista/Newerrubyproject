@@ -162,9 +162,18 @@ background: url("/high-resolution-wallpapers-25.jpg")!important;
 }
 
 .headline h1 {
+color:#111!important;
 background:transparent!important;
 }
 
 .headline h2 {
 background:transparent!important;
+}
+
+.headline h2 {
+color:#f05766;
+}
+
+.text-muted {
+color:#f05766!important;
 }
