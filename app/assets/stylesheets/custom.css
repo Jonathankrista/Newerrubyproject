@@ -156,3 +156,15 @@ div.jumbotron {
  .navbar-nav>li>a {
 line-height:normal!important;
 }
+
+.header-image {
+background: url("/high-resolution-wallpapers-25.jpg")!important;
+}
+
+.headline h1 {
+background:transparent!important;
+}
+
+.headline h2 {
+background:transparent!important;
+}

@@ -239,7 +239,7 @@ footer a:hover, footer a:focus { color: #fff; border-bottom: 1px dotted #fff; }
 
 
       <h2>Sign up</h2>
-
+       <hr class="featurette-divider">
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= devise_error_messages! %>
 
@@ -267,7 +267,7 @@ footer a:hover, footer a:focus { color: #fff; border-bottom: 1px dotted #fff; }
       <% end %>
 
       <%= render "devise/shared/links" %>
-
+      <hr class="featurette-divider">
       <footer>
 
         <div class="row">
