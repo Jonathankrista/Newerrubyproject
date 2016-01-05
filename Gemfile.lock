@@ -202,7 +202,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   letter_opener
-  pg (~> 0.18.4)
+  pg
   rails (= 4.2.5)
   rails_12factor
   sass-rails (~> 5.0)
