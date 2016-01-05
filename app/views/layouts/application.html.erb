@@ -20,47 +20,47 @@
 
 <body>
  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
- <div style=font-size:18px; font-weight:300; font-family: 'Roboto'; >
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><i class="fa fa-camera"></i>
-        <span class="sr-only">Toggle navigation</span>
-        <span class=""></span>
-        <span class=""></span>
-        <span class=""></span>
-      </button>
-      <div class ="Showcase">
-      <%= link_to 'ShowCase' , root_path , :class => 'navbar-brand' %>
-    </div>
-    </div>
+   <div style=font-size:18px; font-weight:300; font-family: 'Roboto'; >
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><i class="fa fa-camera"></i>
+          <span class="sr-only">Toggle navigation</span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+        </button>
+        <div class ="Showcase">
+          <%= link_to 'ShowCase' , root_path , :class => 'navbar-brand' %>
+        </div>
+      </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="hvr-underline-from-left">
-          <%= link_to '<span class="glyphicon glyphicon-info-sign"></span> About'.html_safe, page_about_path %>
-        </li>
-        <li class="hvr-underline-from-left">
-         <%= link_to '<span class="glyphicon glyphicon-camera"></span> Portfolio'.html_safe, page_portfolio_path %>
-       </li>
-       <li class="hvr-underline-from-left"><%= link_to '<span class="glyphicon glyphicon-envelope"></span> Contact'.html_safe, page_contact_path %>
-       </li>
-     </ul>
-     <ul class="nav navbar-nav navbar-right">
-      <% if user_signed_in? %>
-      <li class="hvr-underline-from-left"><%= link_to '<span class="glyphicon glyphicon-user"></span> My Profile'.html_safe, page_profile_path %></li>
-      <li class="hvr-underline-from-left"><%= link_to '<span class="glyphicon glyphicon-log-out"></span> Sign Out'.html_safe, destroy_user_session_path, method: :delete %></li>
-      <% else %>
-      <li class="hvr-underline-from-left"><%= link_to '<span class="glyphicon glyphicon-user"></span>  Sign In'.html_safe, new_user_session_path %></li>
-      <li class="hvr-underline-from-left"><%= link_to '<span class="glyphicon glyphicon-log-in"></span> Sign Up'.html_safe, new_user_registration_path %></li>
-      <% end %>
-    </ul>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="hvr-underline-from-left">
+            <%= link_to '<span class="glyphicon glyphicon-info-sign"></span> About'.html_safe, page_about_path %>
+          </li>
+          <li class="hvr-underline-from-left">
+           <%= link_to '<span class="glyphicon glyphicon-camera"></span> Portfolio'.html_safe, page_portfolio_path %>
+         </li>
+         <li class="hvr-underline-from-left"><%= link_to '<span class="glyphicon glyphicon-envelope"></span> Contact'.html_safe, page_contact_path %>
+         </li>
+       </ul>
+       <ul class="nav navbar-nav navbar-right">
+        <% if user_signed_in? %>
+        <li class="hvr-underline-from-left"><%= link_to '<span class="glyphicon glyphicon-user"></span> My Profile'.html_safe, page_profile_path %></li>
+        <li class="hvr-underline-from-left"><%= link_to '<span class="glyphicon glyphicon-log-out"></span> Sign Out'.html_safe, destroy_user_session_path, method: :delete %></li>
+        <% else %>
+        <li class="hvr-underline-from-left"><%= link_to '<span class="glyphicon glyphicon-user"></span>  Sign In'.html_safe, new_user_session_path %></li>
+        <li class="hvr-underline-from-left"><%= link_to '<span class="glyphicon glyphicon-log-in"></span> Sign Up'.html_safe, new_user_registration_path %></li>
+        <% end %>
+      </ul>
 
+    </div>
+    <!-- /.navbar-collapse -->
   </div>
-  <!-- /.navbar-collapse -->
-</div>
-<!-- /.container-fluid -->
+  <!-- /.container-fluid -->
 </nav>
 
 

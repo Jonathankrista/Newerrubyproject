@@ -60,6 +60,16 @@ float:left;
 		}
 		}
 
+@media (max-width: 822px) {
+.navbar-right {
+    float: right!important;
+    margin-right: -15px;
+    display:none;
+
+    }
+  }
+
+
 div.jumbotron {
 	background-color:transparent!important;
 	position:relative;
@@ -177,3 +187,25 @@ color:#f05766;
 .text-muted {
 color:#f05766!important;
 }
+
+@media (min-width: 950px){
+  #bs-example-navbar-collapse-1 {
+font-size:20px!important;
+padding-left:20px;
+line-height:1px;
+}
+}
+
+
+@media (min-width: 950px) {
+.navbar-brand {
+  font-size:40px!important;
+}
+}
+
+.navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+

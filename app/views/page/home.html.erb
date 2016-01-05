@@ -67,7 +67,7 @@
     text-shadow: 60px 0px transparent, 0 0 #FFF;
   }
   .slider > .arrow.prev:hover::after {
-    text-shadow: 0 0px #FFF, -60px 0 transparent;
+    text-shadow: 0 0px #f05766, -60px 0 transparent;
   }
   .slider > .arrow.next {
     right: 0;
@@ -77,7 +77,7 @@
     text-shadow: -60px 0px transparent, 0 0 #FFF;
   }
   .slider > .arrow.next:hover::after {
-    text-shadow: 0 0px #FFF, 60px 0 transparent;
+    text-shadow: 0 0px #f05766, 60px 0 transparent;
   }
   @media screen and (max-width: 600px) {
     .slider > .arrow {
@@ -111,6 +111,7 @@
     display: inline-block;
     position: relative;
   }
+
   .slider > .indicators > .wrap > i, .slider > .indicators > .wrap b {
     display: inline-block;
     margin: 0 6px;
@@ -118,7 +119,7 @@
     width: 0;
     height: 0;
     padding: 11px;
-    border: 3px solid rgba(255, 255, 255, 0.5);
+    border: 3px solid #f05766;
   }
   .slider > .indicators > .wrap > i {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), 0 0 8px rgba(0, 0, 0, 0.2) inset;
@@ -127,11 +128,12 @@
     transition: .1s ease-out;
   }
   .slider > .indicators > .wrap > i:hover {
-    border-color: #FFF;
+    border-color: #f05766;
   }
+
   .slider > .indicators > .wrap > b {
     position: absolute;
-    background: #FFF;
+    background:#f05766;
     margin: -2px 4px;
     padding: 13px;
     left: 0;
