@@ -35,7 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "letter_opener", :group => :development
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem 'friendly_id', '~> 5.1'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

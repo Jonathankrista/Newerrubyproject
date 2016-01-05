@@ -20,7 +20,7 @@ end
   # GET /portfolios/1
   # GET /portfolios/1.json
   def show
-    @portfolio = Portfolio.find(params[:id])
+    @portfolio = Portfolio.friendly.find(params[:id])
   end
 
   # GET /portfolios/new
@@ -103,7 +103,7 @@ private
 
   # Use callbacks to share common setup or constraints between actions.
   def set_portfolio
-    @portfolio = Portfolio.find(params[:id])
+    @portfolio = Portfolio.friendly.find(params[:id])
   end
 
   # Never trust parameters from the scary internet, only allow the white list through.
