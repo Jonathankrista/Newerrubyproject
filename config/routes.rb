@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   get 'page/profile'
 
   get 'page/contact'
-  get 'page/portfolio' => 'portfolios#index'
+  get 'portfolios' => 'portfolios#index'
 
 
   # get 'page/portfolio'
