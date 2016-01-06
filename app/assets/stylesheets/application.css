@@ -14,8 +14,6 @@
  *= require_self
  */
 
-<style>
-
 .social {
   margin: 0 auto;
   padding-top: 100px;
@@ -126,6 +124,7 @@
   to {
     box-shadow: 0 0 0 10px transparent;
   }
+
 }
 
 /* User sign in and sign forms. */
@@ -155,4 +154,3 @@
   padding: 7px 9px;
 }
 <style>
-
