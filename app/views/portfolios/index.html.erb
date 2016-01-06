@@ -28,8 +28,8 @@
   <!-- /.row -->
   <% @portfolios.each do |portfolio| %>
   <div class="col-md-4 portfolio-item">
-    <a href="#">
-      <img class <%= portfolio.image_url %>="img-responsive" src="http://placehold.it/700x400" alt="">
+    <a href="#" class="thumbnail">
+      <img class="img-responsive" src="<%= portfolio.photos.first%>" style="min-height:300px;height:300px;">
     </a>
     <h3> <%= link_to portfolio.title, portfolio %></h3>
     <p><%= portfolio.description %></p>
@@ -61,7 +61,7 @@
           <td><%= link_to 'Show', portfolio %></td>
           <td><%= link_to 'Edit', edit_portfolio_path(portfolio) %></td>
           <td><%= link_to 'Destroy', portfolio, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
-          <% end %>
+  <% end %>
           <hr>
 
           <!-- Pagination -->
