@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   get 'page/contact'
   get 'portfolios' => 'portfolios#index'
 
+  post 'profile' => 'profile#create_image'
+
 
   # get 'page/portfolio'
 
