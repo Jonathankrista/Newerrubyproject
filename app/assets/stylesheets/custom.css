@@ -205,11 +205,13 @@ padding-bottom:0px!important;
 
 .jumbotron h1 {
 text-align:center!important;
+color:#f05766;
 
 }
 
 .jumbotron h2 {
 text-align:center!important;
+color:#f05766;
 }
 
 .jumbotron p {
@@ -218,10 +220,11 @@ text-align:center!important;
 
 .container h1 {
 text-align:center!important;
+color:#f05766;
 }
 
-.divform-group label {
-text-align:center!important;
+.checkbox input[type=checkbox] {
+margin:0px!important;
 }
 
 
