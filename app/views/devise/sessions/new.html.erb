@@ -20,6 +20,7 @@ a, a:hover, a:focus {
 }
 
 h1, h2 {
+  text-align:center!important;
   margin-top: 10px;
   font-size: 38px;
   font-weight: 100;
@@ -238,7 +239,6 @@ footer a:hover, footer a:focus { color: #fff; border-bottom: 1px dotted #fff; }
 
       <div class="border-form-div">
         <h2>Sign in</h2>
-        <hr class="featurette-divider">
 
         <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 

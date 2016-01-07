@@ -20,12 +20,15 @@ a, a:hover, a:focus {
 }
 
 h1, h2 {
+  text-align:center;
   margin-top: 10px;
   font-size: 38px;
   font-weight: 100;
   color: #555;
   line-height: 50px;
 }
+
+
 
 h3 {
   font-size: 22px;
@@ -238,8 +241,7 @@ footer a:hover, footer a:focus { color: #fff; border-bottom: 1px dotted #fff; }
 
 
       <div class ="border-form-div">
-        <h2>Sign up</h2>
-        <hr class="featurette-divider">
+       <h2>Sign up</h2>
         <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
 
         <%= devise_error_messages! %>
