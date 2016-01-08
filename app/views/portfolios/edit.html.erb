@@ -1,7 +1,14 @@
-<h1>Editing Portfolio</h1>
 
+
+
+
+<div class="jumbotron">
+	<h1>Edit your Portfolio</h1>
+	<h2>Make changes at any time to your uploaded content</h2>
+	<p>Showcase your work!</p>
+</div>
+
+<div class="container">
 <%= render 'form' %>
+</div>
 
-<%= link_to 'Show', @portfolio %> |
-<%= link_to 'Back', portfolios_path %> |
-<%= link_to 'Destroy', @portfolio, method: :delete, data: { confirm: 'Are you sure?' } %>

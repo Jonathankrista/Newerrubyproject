@@ -81,7 +81,7 @@
           <strong>Category:</strong>
           <%= @portfolio.category %>
          </p>
-
+        <%= link_to 'Edit', edit_portfolio_path(@portfolio) %>
         <!-- p>
           <strong>Subcategory:</strong>
           <%= @portfolio.subcategory %>
@@ -96,10 +96,10 @@
       <%= f.text_field :subcategory, class: "form-control", placeholder: "Enter the SubCategory" %>
       <%= f.text_field :subcategory, class: "form-control", placeholder: "Enter the SubCategory" %> -->
      <!--  <button id = "likeBtn" type="submit" class="btn btn-primary">Like</button> -->
+
       <% end %>
 
-      <%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
-      <%= link_to 'Back', portfolios_path %>
+
 
 
 
