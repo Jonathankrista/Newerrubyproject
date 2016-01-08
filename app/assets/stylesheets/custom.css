@@ -1,6 +1,6 @@
 #mainNav {
 	border-color: transparent!important;
-	background-color:;
+	background-color:#fff!important;
 
 }
 
@@ -278,4 +278,16 @@ padding-left:40px!important;
 
 .btn.btn-success {
 margin-left:60px!important;
+}
+
+h1.page-header {
+padding-top:40px;
+
+}
+h1.page-header small {
+color:#000!important;
+}
+
+div.col-lg-12 {
+padding-top:50px!important;
 }
