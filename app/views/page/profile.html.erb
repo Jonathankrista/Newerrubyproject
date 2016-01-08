@@ -4,31 +4,29 @@
     <h1>My Profile</h1>
     <h2>Welcome <%=current_user.email%></h2>
     <h2></h2>
-    <p>Showcase your work!</p>
-</div>
+    <p>  <span class="glyphicon glyphicon-plus"></span>   Add a profile image and create new portfolios</p>
+    <p>  <span class="glyphicon glyphicon-eye-open"></span>   See your portfolios and total amount of likes</p>
+
+    <img class="profileImage img-circle img-responsive center" src="<%=current_user.avatar%>">
 
 
-
-
-
-
-
-
-<div class="row">
-    <div class="col-lg-6">
-        <img class="profileImage img-circle img-responsive center" src="<%=current_user.avatar%>">
-
+    <div class="border-form-div">
         <form class="new_portfolio" id="new_portfolio" enctype="multipart/form-data" action="/profile" accept-charset="UTF-8" method="post">
-            <input type="file" class="btn btn-primary" name="profile[avatar]" id="portfolio_image_url">
+            <input type="file" class="btn btn-default" name="profile[avatar]" id="portfolio_image_url">
 
-            <button class="btn btn-primary">Add Profile Image</button>
+            <button class="btn btn-default">Add Profile Image</button>
             <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
 
-        </form>
-    </div>
+            <button class="btn btn-info"><%= link_to 'New Portfolio'.html_safe, new_portfolio_path %></button>
+        </div>
+    </form>
+</div>
 </div>
 
 
-<!-- Portfolio button -->
-<button><%= link_to '<span class="glyphicon glyphicon-user"></span> New Portfolio'.html_safe, new_portfolio_path %></button>
-</div>
+
+
+
+
+
+
