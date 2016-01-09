@@ -50,6 +50,12 @@
 
 }
 
+@media (max-width: 755px) {
+  .navbar-right {
+   display:initial!important;
+ }
+}
+
 
 @media (max-width: 798px) {
   .navbar-right {
@@ -68,7 +74,6 @@
 
   }
 }
-
 /* Overline From Left */
 .hvr-underline-from-left {
   display: inline-block;
@@ -298,33 +303,38 @@ div.col-lg-12 {
 }
 
 img.profileImage.img-circle.img-responsive.center {
-max-width:50%!important;
-margin:0 auto!important;
+  max-width:50%!important;
+  margin:0 auto!important;
 }
 
 input#portfolio_image_url.btn.btn-default {
-margin:0 auto;
-width:101px!important;
+  margin:0 auto;
+  width:101px!important;
 }
 
 button.btn.btn-default {
-margin-left:50px;
-margin-top:15px;
+  margin-left:50px;
+  margin-top:15px;
 }
 
 button.btn.btn-default a {
-padding-left:0px!important;
-margin-left:10px!important;
+  padding-left:0px!important;
+  margin-left:10px!important;
 }
 
-button.btn.btn-info a {
-padding-left:0px!important;
-margin-left:3px!important;
+button.btn.btn-danger a {
+  padding-left:0px!important;
+  margin-left:3px!important;
 }
 
-button.btn.btn-info {
-margin-top:15px!important;
-margin-left:58px!important;
-background-color:transparent!important;
-border-color:#000!important;
+button.btn.btn-danger {
+  margin-top:15px!important;
+  margin-left:58px!important;
+  background-color:#fff!important;
+  border-color:#000!important;
+  hover:#000!important;
+}
+
+div.border-form-div {
+  margin-top:15px!important;
 }
