@@ -13,9 +13,10 @@ class PortfoliosController < ApplicationController
   if params[:search]
     @portfolios = Portfolio.search(params[:search]).order("created_at DESC")
   else
-    @portfolios = Portfolio.order("created_at DESC")
+    @portfolios = Portfolio.all.order(:cached_votes_score => :desc)
   end
 end
+
 
   # GET /portfolios/1
   # GET /portfolios/1.json
@@ -65,15 +66,6 @@ end
      @portfolio.downvote_from current_user
      redirect_to portfolios_path
   end
-
-   def index
-   @portfolios = Portfolio.all.order(:cached_votes_score => :desc)
- end
-
-
-
-
-
 
   # PATCH/PUT /portfolios/1
   # PATCH/PUT /portfolios/1.json
