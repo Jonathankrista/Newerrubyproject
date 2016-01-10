@@ -212,63 +212,64 @@ footer a:hover, footer a:focus { color: #fff; border-bottom: 1px dotted #fff; }
 </head>
 
 <body>
-
-  <div class="inner-bg">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-sm-offset-2 text">
-          <h1><strong>Showcase</strong> Sign in &amp; Register Forms</h1>
-          <div class="description">
-            <p>
-            </p>
+  <div class="wrapper">
+    <div class="inner-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 text">
+            <h1><strong>Showcase</strong> Sign in &amp; Register Forms</h1>
+            <div class="description">
+              <p>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="border-form-div">
-        <h2>Sign in</h2>
+        <div class="content">
+          <div class="border-form-div">
+            <h2>Sign in</h2>
 
-        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+            <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
-        <%= f.email_field :email, autofocus: true, :placeholder => 'Email address' %>
+            <%= f.email_field :email, autofocus: true, :placeholder => 'Email address' %>
 
-        <%= f.password_field :password, :placeholder => 'Password' %>
-        <% if devise_mapping.rememberable? -%>
-
-
-        <% end -%>
-
-        <%= f.submit "Sign In",:class=>'btn btn-primary' %>
+            <%= f.password_field :password, :placeholder => 'Password' %>
+            <% if devise_mapping.rememberable? -%>
 
 
-        <% end %>
-       <%= render "devise/shared/links" %>
+            <% end -%>
 
-      </div>
+            <%= f.submit "Sign In",:class=>'btn btn-primary' %>
 
-    </body>
 
-    </html>
+            <% end %>
+            <%= render "devise/shared/links" %>
 
-    <hr class="featurette-divider">
-
-    <footer>
-
-      <div class="row">
-        <div class="col-lg-12">
-          <img src="/logo3.png" class="img-responsive" alt="Responsive image">
-        </div>
-      </div>
-      <div class="social">
-        <ul>
-          <li class="facebook"></li>
-          <li class="twitter"></li>
-          <a href="https://ca.linkedin.com/in/jonathankrista"><li class="fa-linkedin"></li>
-            <a href="https://github.com/Jonathankrista"><li class="fa-github"></li>
-            </ul>
           </div>
-        </footer>
+        </div>
 
+
+        </html>
+
+
+
+        <div id="footer">
+          <div class="social">
+
+            <img src="/logo3.png" class="img" alt="Responsive image">
+
+            <ul>
+              <li class="facebook"></li>
+              <li class="twitter"></li>
+              <a href="https://ca.linkedin.com/in/jonathankrista"><li class="fa-linkedin"></li>
+                <a href="https://github.com/Jonathankrista"><li class="fa-github"></li>
+                </ul>
+              </div>
+            </div>
+
+            </html>
+          </div>
+        </body>
 
 
 

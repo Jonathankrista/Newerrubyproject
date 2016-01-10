@@ -1,30 +1,49 @@
 
-<!-- Profile page -->
-<div class="jumbotron">
-    <h1>My Profile</h1>
-    <h2>Welcome <%=current_user.email%></h2>
-    <h2></h2>
-    <p>  <span class="glyphicon glyphicon-plus"></span>   Add a profile image and create new portfolios</p>
-    <p>  <span class="glyphicon glyphicon-eye-open"></span>   See your portfolios and total amount of likes</p>
+<body>
+    <div id="wrapper">
+        <!-- Profile page -->
+        <div class="jumbotron">
+            <h1>My Profile</h1>
+            <h2>Welcome <%=current_user.email%></h2>
+            <h2></h2>
+            <p>  <span class="glyphicon glyphicon-plus"></span>   Add a profile image and create new portfolios</p>
+            <p>  <span class="glyphicon glyphicon-eye-open"></span>   See your portfolios and total amount of likes</p>
 
-    <img class="profileImage img-circle img-responsive center" src="<%=current_user.avatar%>">
+            <img class="profileImage img-circle img-responsive center" src="<%=current_user.avatar%>">
 
 
-    <div class="border-form-div">
-        <form class="new_portfolio" id="new_portfolio" enctype="multipart/form-data" action="/profile" accept-charset="UTF-8" method="post">
-            <input type="file" class="btn btn-default" name="profile[avatar]" id="portfolio_image_url">
+            <div class="border-form-div">
+                <form class="new_portfolio" id="new_portfolio" enctype="multipart/form-data" action="/profile" accept-charset="UTF-8" method="post">
+                    <input type="file" class="btn btn-default" name="profile[avatar]" id="portfolio_image_url">
 
-            <button class="btn btn-default">Add Profile Image</button>
-            <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+                    <button class="btn btn-default">Add Profile Image</button>
+                    <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
 
-            <button class="btn btn-danger"><%= link_to 'New Portfolio'.html_safe, new_portfolio_path %></button>
+                    <button class="btn btn-danger"><%= link_to 'New Portfolio'.html_safe, new_portfolio_path %></button>
+                </div>
+            </form>
         </div>
-    </form>
-</div>
-</div>
+
+    <div id="footer">
+        <div class="social">
+
+            <img src="/logo3.png" class="img" alt="Responsive image">
+
+            <ul>
+                <li class="facebook"></li>
+                <li class="twitter"></li>
+                <a href="https://ca.linkedin.com/in/jonathankrista"><li class="fa-linkedin"></li>
+                    <a href="https://github.com/Jonathankrista"><li class="fa-github"></li>
+                    </ul>
+                </div>
+            </div>
 
 
 
+
+
+        </div>
+    </body>
 
 
 

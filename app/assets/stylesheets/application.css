@@ -26,13 +26,13 @@
   list-style: none;
   margin: 0 10px;
   position: relative;
-    bottom: 60px;
+    bottom:70px;
   width: 50px;
 }
 .social ul li:before {
   font: 400 1em/50px "FontAwesome";
 }
-.social ul li:hover {
+  .social ul li:hover {
   animation: transform .5s forwards, shadow 1s forwards;
   -ms-animation: transform .5s forwards, shadow 1s forwards;
   -moz-animation: transform .5s forwards, shadow 1s forwards;
