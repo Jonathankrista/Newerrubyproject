@@ -62,7 +62,6 @@
     float: right!important;
     margin-right: -15px;
     display:none;
-
   }
 }
 
@@ -71,7 +70,6 @@
     float: right!important;
     margin-right: -15px;
     display:none;
-
   }
 }
 /* Overline From Left */
@@ -201,8 +199,6 @@
     padding-right:12px!important;
     padding-left:12px!important;
   }
-
-
 }
 
 @media (min-width: 1300px){
@@ -215,8 +211,6 @@
     padding-right:25px!important;
     padding-left:25px!important;
   }
-
-
 }
 
 
@@ -291,7 +285,6 @@ div.border-form-div a {
 
 h1.page-header {
   padding-top:40px;
-
 }
 h1.page-header small {
   color:#000!important;
@@ -360,7 +353,6 @@ div.border-form-div a{
   left:0;
   margin-top:80px;
   z-index:-100;
-
 }
 
 #wrapper {
