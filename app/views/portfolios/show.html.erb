@@ -79,14 +79,22 @@
     </a>
 
   </header>
+   <!-- Profile -->
+
+
 
   <!-- Page Content -->
   <div class="container">
+    <div class="profile">
+      <p>Carlos Ferreira</p>
+      <p>carlosprovisorio@icloud.com</p>
+      <p>Photografer</p>
+    </div>
 
     <div class="row">
       <div class="col-lg-12">
-        <strong><h1><%= @portfolio.title %></h1></strong>
-        <h2><%= @portfolio.description %></h2>
+        <strong><h2 class="description"><%= @portfolio.title %></h2></strong>
+        <p><%= @portfolio.description %></p>
         <p>
           <strong>Category:</strong>
           <%= @portfolio.category %>
