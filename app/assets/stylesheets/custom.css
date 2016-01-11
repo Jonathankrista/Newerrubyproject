@@ -1,7 +1,6 @@
 #mainNav {
-  font-family: 'Roboto', sans-serif;
-  border-color: transparent!important;
-  background-color:#fff!important;
+	border-color: transparent!important;
+	background-color:#fff!important;
 
 }
 
@@ -13,14 +12,14 @@
   border-color: tramsparent!important;
 }
 
-#Showcase {
+.Showcase {
+	font: normal normal bold 60px/0 "montserrat", Helvetica, sans-serif;
 	color: #f05766;
 	-o-text-overflow: ellipsis;
 	text-overflow: ellipsis;
-	letter-spacing: 4.5px;
+	letter-spacing: 2.5px;
 	word-spacing: 20px;
-  font-family: 'Montserrat', sans-serif;
-  font:normal normal bold 60px/0 "Ubuntu", Ubuntu, sans-serif;
+
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -63,6 +62,7 @@
     float: right!important;
     margin-right: -15px;
     display:none;
+
   }
 }
 
@@ -71,6 +71,7 @@
     float: right!important;
     margin-right: -15px;
     display:none;
+
   }
 }
 /* Overline From Left */
@@ -168,7 +169,6 @@
 .headline h1 {
   color:#111!important;
   background:transparent!important;
-  font-family: 'Roboto', sans-serif;
 }
 
 .headline h2 {
@@ -201,6 +201,8 @@
     padding-right:12px!important;
     padding-left:12px!important;
   }
+
+
 }
 
 @media (min-width: 1300px){
@@ -213,6 +215,8 @@
     padding-right:25px!important;
     padding-left:25px!important;
   }
+
+
 }
 
 
@@ -262,9 +266,9 @@
 }
 
 .btn-primary {
- background-color:#f05766!important;
- margin-left:80px!important;
- border-color:#f05766!important;
+   background-color:#f05766!important;
+  margin-left:80px!important;
+  border-color:#f05766!important;
 }
 
 div.col-lg-12 a {
@@ -287,6 +291,7 @@ div.border-form-div a {
 
 h1.page-header {
   padding-top:40px;
+
 }
 h1.page-header small {
   color:#000!important;
@@ -317,10 +322,6 @@ button.btn.btn-default {
   background-color:#f05766!important;
   margin-left:50px;
   margin-top:15px;
-}
-
-.btn-default {
-  border-color:transparent!important;
 }
 
 button.btn.btn-default a {
@@ -359,6 +360,7 @@ div.border-form-div a{
   left:0;
   margin-top:80px;
   z-index:-100;
+
 }
 
 #wrapper {
@@ -389,116 +391,37 @@ section {
 }
 
 div#posts {
-  color:#f05766!important;
+color:#f05766!important;
 }
 
 h1.page-header {
-  color:#f05766!important;
+color:#f05766!important;
 }
 
 .btn-warning {
-  background-color:#f05766 !important;
-  border-color:#f05766!important;
-  margin-right:10px;
+background-color:#f05766 !important;
+border-color:#f05766!important;
+margin-right:10px;
 }
 
 input#search.form-control {
-  width:130px!important;
-  margin:5px!important;
-
+width:130px!important;
+margin:5px!important;
 }
 
 button.btn.btn-info {
-  background-color:#f05766 !important;
-  border-color:#f05766!important;
+background-color:#f05766 !important;
+border-color:#f05766!important;
 }
-
-@media (max-width: 1600px) {
-  button.btn.btn-info
-  {
-    margin-left:510px!important;
-    padding-right:24px;
-    padding-left:24px;
-    padding-top:12px;
-    padding-bottom:12px;
-    font-size:28px;
-  }
-
-  @media (max-width: 1200px) {
-    button.btn.btn-info
-    {
-      margin-left:410px!important;
-      padding-right:24px;
-      padding-left:24px;
-      padding-top:12px;
-      padding-bottom:12px;
-      font-size:28px;
-    }
-
-    @media (max-width: 990px) {
-      button.btn.btn-info
-      {
-        margin-left:300px!important;
-        padding-right:24px;
-        padding-left:24px;
-        padding-top:12px;
-        padding-bottom:12px;
-        font-size:28px;
-      }
-
-      @media (max-width: 500px) {
-        button.btn.btn-info
-        {
-          margin-left:200px!important;
-          padding-right:18px;
-          padding-left:18px;
-          padding-top:9px;
-          padding-bottom:9px;
-          font-size:17.5px;
-        }
-
-
-        @media (max-width: 500px) {
-          button.btn.btn-info
-          {
-            margin-left:120px!important;
-            padding-right:18px;
-            padding-left:18px;
-            padding-top:9px;
-            padding-bottom:9px;
-            font-size:17.5px;
-          }
-
-          }
-
-          h3 a {
-            color:#000!important;
-
-          }
-
-          .col-md-4-portfolio-item {
-            margin:0 auto;
-          }
-
-          .jumbotron p {
-            padding-top:13px!important;
-          }
-
-          div.form-group {
-          }
-
-          div.container-fluid {
-            margin-top:10px!important;
-          }
-
-        .inner-bg {
-    padding: 140px 0 80px 0!important;
-}
-
-div.social {
-border: 1px solid #000;
-}
-
 span.badge {
-background-color:#000!important ;
+color:#000!important;
+}
+
+h3 a {
+  color:#000!important;
+
+}
+
+.col-md-4-portfolio-item {
+margin:0 auto;
 }
