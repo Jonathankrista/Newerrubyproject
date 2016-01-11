@@ -35,14 +35,14 @@
 
 
       <%= link_to like_portfolio_path(portfolio), class: 'like', method: :put do %>
-      <button type='button' class='btn btn-info' aria-label='Left Align'>
+      <button type='button' class='btn btn-warning' aria-label='Left Align'>
         <span class='glyphicon glyphicon-thumbs-up glyphicon-align-center' aria-hidden='true'></span>
         <span class='badge'><%=portfolio.get_upvotes.size %></span>
       </button>
       <% end %>
 
       <%= link_to unlike_portfolio_path(portfolio), class: 'unlike', method: :put do %>
-      <button type ='button' class='btn btn-info' aria-label='Left Align'>
+      <button type ='button' class='btn btn-warning' aria-label='Left Align'>
         <span class='glyphicon glyphicon-thumbs-down glyphicon-align-center' aria-hidden='true'></span>
         <span class ='badge'><%=portfolio.get_downvotes.size %></span>
       </button>
