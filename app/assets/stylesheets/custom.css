@@ -1,6 +1,7 @@
 #mainNav {
 	border-color: transparent!important;
 	background-color:#fff!important;
+  font-family: 'Roboto', sans-serif!important;
 
 }
 
@@ -13,12 +14,12 @@
 }
 
 .Showcase {
-	font: normal normal bold 60px/0 "montserrat", Helvetica, sans-serif;
 	color: #f05766;
 	-o-text-overflow: ellipsis;
 	text-overflow: ellipsis;
-	letter-spacing: 2.5px;
-	word-spacing: 20px;
+	letter-spacing: 3.5px;
+	word-spacing: 25px;
+  font-family: 'Ubuntu', sans-serif;
 
 }
 
