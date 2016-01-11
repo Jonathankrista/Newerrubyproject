@@ -1,7 +1,6 @@
 <% @users.each do |user| %>
-<%= link_to user.username, user %>
-<%= user.email %>
+
+<div class="jumbotron">
+	<h3><%= user.email %></h1>
+</div>
 <% end %>
-
-<%= link_to "show_index_of_users", users_path %>
-

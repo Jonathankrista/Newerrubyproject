@@ -18,7 +18,7 @@ Rails.application.routes.draw do
 
   post 'profile' => 'profile#create_image'
 
-resources :users, :only => [:show]
+resources :users, :only => [:show, :index]
   # get 'page/portfolio'
 
   # The priority is based upon order of creation: first created -> highest priority.
