@@ -170,6 +170,7 @@
 .headline h1 {
   color:#111!important;
   background:transparent!important;
+  font-family: 'Roboto', sans-serif!important;
 }
 
 .headline h2 {
@@ -217,6 +218,16 @@
     padding-left:25px!important;
   }
 
+@media (min-width: 1600px){
+  #bs-example-navbar-collapse-1 {
+    font-size:25px!important;
+    padding-left:145px;
+    line-height:1px;
+  }
+  #bs-example-navbar-collapse-1 li {
+    padding-right:30px!important;
+    padding-left:30px!important;
+  }
 
 }
 
@@ -426,3 +437,4 @@ h3 a {
 .col-md-4-portfolio-item {
 margin:0 auto;
 }
+
