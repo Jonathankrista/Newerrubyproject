@@ -221,13 +221,13 @@
 
 @media (min-width: 1600px){
   #bs-example-navbar-collapse-1 {
-    font-size:25px!important;
-    padding-left:225px;
+    font-size:26px!important;
+    padding-left:245px;
     line-height:1px;
   }
   #bs-example-navbar-collapse-1 li {
-    padding-right:35px!important;
-    padding-left:35px!important;
+    padding-right:37px!important;
+    padding-left:37px!important;
   }
 
 }
