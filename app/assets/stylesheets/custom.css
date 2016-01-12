@@ -222,12 +222,12 @@
 @media (min-width: 1600px){
   #bs-example-navbar-collapse-1 {
     font-size:25px!important;
-    padding-left:145px;
+    padding-left:225px;
     line-height:1px;
   }
   #bs-example-navbar-collapse-1 li {
-    padding-right:30px!important;
-    padding-left:30px!important;
+    padding-right:35px!important;
+    padding-left:35px!important;
   }
 
 }
