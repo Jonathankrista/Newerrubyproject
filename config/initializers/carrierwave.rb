@@ -1,4 +1,4 @@
-if Rails.env.production?
+# if Rails.env.production?
   CarrierWave.configure do |config|
     config.fog_credentials = {
     # Configuration for Amazon S3 should be made available through an Environment variable.
@@ -13,7 +13,10 @@ if Rails.env.production?
     :provider              => 'AWS',
     :aws_access_key_id     => ENV['S3_KEY'],
     :aws_secret_access_key => ENV['S3_SECRET'],
-    :region                => ENV['S3_REGION']
+    :region                => ENV['S3_REGION'],
+    :endpoint => ENV['S3_ASSET_URL']
+
+
     }
 
     # For testing, upload files to local `tmp` folder.
@@ -24,4 +27,4 @@ if Rails.env.production?
 
     config.fog_directory    = ENV['S3_BUCKET_NAME']
   end
-end
+# end
