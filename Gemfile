@@ -4,6 +4,7 @@ ruby '2.2.3'
 
 gem 'faker'
 gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
+gem 'fog'
 gem 'devise'
 gem 'cloudinary'
 # gem 'cloudinary'
